@@ -36,7 +36,7 @@ In the past, you've found that this general approach can be effective:
 *   Lecture notes are the "Source of Truth" for notation and scope.
 *   Homework/exams are useful for determining what is important. If a specific derivation or calculation appears in multiple homeworks, make sure the steps for that calculation are detailed in the summary.
 
-## Technical Wisdom (LaTeX & Tool Use)
+## Technical Wisdom (LaTeX and Tool Use)
 
 ### LaTeX
 
@@ -44,9 +44,9 @@ In the past, you've found that this general approach can be effective:
 *   **Math Environments:** STRICTLY use `\( ... \)` for inline math, `\[ ... \]` or the `equation` environment for display math, and the `align` or `align*` environments for multi-line math. Do NOT use `$` or `$$`.
 *   **Escaping Characters:** Explicitly check for `_` (underscore) and `%` (percent) characters in text mode and escape them (`\_`, `\%`).
 *   **Compilation:** Always run `pdflatex` after maxing changes to check for errors.
-        * Don’t wait until the end to compile. Compile after each step so that you catch errors early.
-        * The `-interaction=nonstopmode` flag may be needed to prevent the tool from hanging on a LaTeX error.
-        *   **Debugging:** If compilation fails, use `grep -A 5 "!" main.log` to find the exact error quickly without reading the whole log.
+    *   Don’t wait until the end to compile. Compile after each step so that you catch errors early.
+    *   The `-interaction=nonstopmode` flag may be needed to prevent the tool from hanging on a LaTeX error.
+    *   **Debugging:** If compilation fails, use `grep -A 5 "!" main.log` to find the exact error quickly without reading the whole log.
 *   **Modular Construction:** Create a project directory. Do not write one giant file. Create a `main.tex` driver and separate `.tex` files for logical sections (e.g., `mechanics.tex`, `quantum.tex`).
 *   **Iterative Refinement:** Write content section-by-section. Compile early and often to catch syntax errors before they compound.
 *   **Output Review:** After compiling, inspect the log or output to ensure good formatting. Check that equations are not split awkwardly across lines and that there are no overfull/underfull boxes causing visual issues.

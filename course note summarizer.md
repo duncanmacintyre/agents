@@ -25,10 +25,10 @@ In the past, you've found that this general approach can be effective:
 *   **Derivation Sketches:** Provide logic sketches (roadmaps) for important derivations. Do not just state the final formula.   
 *   **Calculational Pro-Tips:** Explicitly point out shortcuts.
 
-### 5. Final Review & Handover (The End)
+### 5. Final Review and Handover (The End)
 *   **Self-Audit:** Before finishing, review the original user prompt and your generated files. Did you meet all goals? Is the PDF output file clean? Do you notice any issues or areas for improvement?
 *   **Reflect on Lessons Learned:** Was there any problem-solving that you did that you should take note of because it would be useful for agents to know should they be doing a similar task in the future? If so, save a summary to a “lessons for agents” file (e.g. `lessons_for_agents.md`). Make sure not to overwrite any existing “lessons for agents” file.
-*   **Log File:** Create a log file that summarizes what you've done and describes the important files in the project. Make sure not to overwrite any existing log file.
+*   **Log File:** Save a timestamped overview of what you've done to `log.md`. Append to the file if it already exists.
 *   **Completion Message:** Inform the user that you are done. Tell them anything you think they might want to know.
 
 ## Sources of Information
